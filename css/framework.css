@@ -69,7 +69,6 @@
   margin: 20px;
 }
 
-
 .mt-0 {
   margin-top: 0;
 }
@@ -84,6 +83,10 @@
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .mb-20 {
@@ -138,6 +141,10 @@
   font-size: 14px;
 }
 
+.fs-15 {
+  font-size: 15px;
+}
+
 /* End Font */
 /* Start Border */
 .rad-6 {
@@ -156,6 +163,10 @@
   -o-border-radius: 10px;
 }
 
+.b-none {
+  border: none;
+}
+
 /* End Border */
 /* Start Width */
 .w-full {
@@ -168,6 +179,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.btn-shape {
+  padding: 8px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 /* End Components */
