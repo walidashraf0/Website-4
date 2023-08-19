@@ -230,6 +230,7 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -476,3 +477,90 @@ ul {
 }
 
 /* End Tasks */
+/* Start Latest Upload */
+.latest-uploads ul li:not(:last-of-type){
+    border-bottom: 1px solid #EEE;
+}
+
+.latest-uploads ul li img {
+    width: 40px;
+    height: 40px;
+}
+/* End Latest Upload */
+/* Start Last Project */
+.last-project ul::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.last-project ul li.done::before {
+    background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+    animation: change-color 0.8s infinite alternate;
+    -webkit-animation: change-color 0.8s infinite alternate;
+}
+
+.last-project .launch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+/* End Last Project */
+/* Start Reminders */
+.reminders ul li .key {
+    width: 15px;
+    height: 15px;
+}
+
+.reminders ul li > .blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li > .green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li > .orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li > .red {
+    border-left: 2px solid var(--red-color);
+}
+
+/* End Reminders  */
+/* Start Animation */
+@keyframes change-color {
+    from {
+        background-color: var(--blue-color);
+    }
+    to {
+        background-color: white;
+    }
+}
+/* End Animation */
